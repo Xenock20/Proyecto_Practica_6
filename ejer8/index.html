@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="decT">
+      <input
+        type="text"
+        id="precio"
+        name="precio"
+        placeholder="Precio del producto"
+      />
+
+      <input type="submit" value="Agregar" name="agregar" />
+      <input type="submit" value="Calcular" name="calcular" />
+      <input type="submit" value="Reiniciar" name="reiniciar" />
+    </form>
+
+    <form class="decR">
+      <h1>Descuentos</h1>
+      <fieldset>
+        <input type="radio" name="descuento" id="descuento_1" value="15" class="r"/>
+        <label for="descuento_1">15%</label>
+        <input type="radio" name="descuento" id="descuento_2" value="20" class="r"/>
+        <label for="descuento_2">20%</label>
+        <input type="radio" name="descuento" id="descuento_3" value="25" class="r"/>
+        <label for="descuento_3">25%</label>
+      </fieldset>
+    </form>
+
+    <div class="precios">
+      <h1>Productos</h1>
+      <ul id="list"></ul>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
